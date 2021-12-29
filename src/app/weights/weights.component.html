@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+
+    <div class="container text-center mt-5 mb-4">
+      <h4 style="font-family: 'Bree Serif', serif;">
+        <strong>Manufacturers of Olympic Barbell Rod.</strong>
+      </h4>
+    </div>
+    <div class="container" style="padding: 10px;">
+        <div class="row row-cols-4">
+            
+            <div class="col" style="background-color: rgb(255, 255, 255);">
+              <img src="assets/removed2.jpg">
+              <div class="d-flex justify-content-between mt-3">
+                <h6 class="mt-2" style="color: rgb(0, 0, 0);">CTSTRENGTH Weights</h6>
+                <button mat-raised-button color="primary" (click)="barbell2()">More-Info</button>
+            </div>
+          </div>
+          <div class="col" style="background-color: rgb(255, 255, 255);">
+            <img src="assets/removed3.jpg">
+            <div class="d-flex justify-content-between mt-3">
+              <h6 class="mt-2" style="color: rgb(0, 0, 0);">CTSTRENGTH weights</h6>
+              <button mat-raised-button color="primary" (click)="barbell3()">More-Info</button>
+          </div>
+        </div>
+        <div class="col" style="background-color: rgb(255, 255, 255);">
+          <img src="assets/whitecut.png">
+          <div class="d-flex justify-content-between mt-3">
+            <h6 class="mt-2" style="color: rgb(0, 0, 0);">CTSTRENGTH Weights</h6>
+            <button mat-raised-button color="primary" (click)="opendialog()">More-Info</button>
+        </div>
+      </div>
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify" style="color: rgb(221, 219, 216); font-family: 'Quantico', sans-serif;">Manufacturers of Quality Steel Revolving Dumbbells, Revolving Barbells, Standard dumbbells, Weight Plates, Olympic Barbells
+              & Customized Weight stacks .</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a [routerLink]="['/shop']" style="color: rgb(221, 219, 216);">Barbells</a></li>
+              <li><a [routerLink]="['/dumbell']" style="color: rgb(221, 219, 216);">Dumbbells</a></li>
+              <li><a [routerLink]="['/weight']"  style="color: rgb(221, 219, 216);" >Weights</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a [routerLink]="['/about']"  style="color: rgb(221, 219, 216);">About Us</a></li>
+              <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active"  style="color: rgb(221, 219, 216);">Contact Us</a></li>
+              <li><a [routerLink]="['/gallery']" routerLinkActive="router-link-active"  style="color: rgb(221, 219, 216);">Our Gallery</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12" id="footerall" style="display: flex;">
+            <a [routerLink]="['/home']"><p class="copyright-text"><img id="footct" src="assets/Fl.png"></p></a> 
+            <a id="ct">CTSTRENGTH INDIA</a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href=" https://www.facebook.com/CTstrengthIndia/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="twitter" href="https://wa.me/919881728752"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a class="dribbble" href="https://instagram.com/ctstrengthindia?utm_medium=copy_link"><i class="fab fa-instagram"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
