@@ -28,13 +28,14 @@ export class HomeComponent implements OnInit {
   //   {img: "assets/clients/flex.jpeg"},
   //   {img: "assets/clients/flex2.jpe"},
   // ];
-  slideConfig = { "speed": 9000,  "variableWidth": true, "autoplay": true,  "autoSpeed": 0, "slidesToShow": 4, "loop": true, "slidesToScroll": 4, cssEase:"linear",  "infinite":true, "responsive": [
+  slideConfig = { "infinite":true, "pauseOnFocus": false, "loop":true, "speed": 30000, "autoplay": true, "pause": false,  "autoSpeed": 4500, "slidesToShow": 4,"slidesToScroll": 17, cssEase: "linear", "responsive": [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 4,
         infinite: true,
+        loop:true,
         dots: true,
         
       }

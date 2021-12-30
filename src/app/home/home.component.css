@@ -162,11 +162,25 @@
   margin: auto;
   background: rgb(39, 39, 39);
 }
+#slide{
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+  0% {
+    transform:  translateX(calc(-250px * 9));
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
 .slide img{
   width: 300px;
   height: 300px;
   margin: 10px;
+ 
 }
+
+
 
 .slick-prev, 
 .slick-next {
@@ -174,6 +188,46 @@
   width: 40px;
   background: grey !important;
   z-index: 100;
+}
+
+.glider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.glide-track{
+  display: flex;
+  width: calc(250px * 20);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+
+
+
+
+
+
+.glide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.glide img{
+  width: 100%;
 }
 /* tr:nth-child(odd){
   background-color: #dddddd;
