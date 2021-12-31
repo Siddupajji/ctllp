@@ -226,7 +226,7 @@ body{
 #footct{
   width: 55px;
     height: 55px;
-    image-rendering: crisp-edges;
+    
     border-radius: 50%;
     z-index: 9999999;
     display: block;
